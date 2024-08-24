@@ -516,59 +516,99 @@ img {
   grid-template-rows: repeat(4, 1fr);
   grid-template: "sm sm sm" "ms ls kl" "op op op" "qw ew rt";
   gap: 15px;
+  position: relative;
 
   img {
     max-width: 100%;
     transition: 0.3s all ease 0s;
+  }
+}
 
-    &:hover {
-      box-shadow: 5px 5px 20px black;
-      transform: scale(1.2);
-      border-radius: 10px;
+.home-swiper-marquee {
+  top: 52%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+
+  h1 {
+    font-size: 250px;
+    letter-spacing: 65px;
+    color: #ccc;
+    user-select: none;
+  }
+}
+
+.home-swiper-image-1-container {
+  grid-area: sm;
+}
+
+.home-swiper-image-2-container {
+  grid-area: ms;
+}
+
+.home-swiper-image-3-container {
+  grid-area: ls;
+}
+
+.home-swiper-image-4-container {
+  grid-area: kl;
+}
+
+.home-swiper-image-5-container {
+  grid-area: op;
+}
+
+.home-swiper-image-7-container {
+  grid-area: qw;
+}
+
+.home-swiper-image-8-container {
+  grid-area: ew;
+}
+
+.home-swiper-image-9-container {
+  grid-area: rt;
+}
+
+.home-swiper-image-container {
+  position: relative;
+
+  a {
+    left: 40%;
+    top: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    display: none;
+  }
+
+  &:hover {
+    a {
+      display: block;
+    }
+
+    img {
+      filter: blur(3px) grayscale(1);
     }
   }
 }
 
-.home-swiper-image-1 {
-  grid-area: sm;
-
+.home-swiper-image-1-container {
   &:hover {
-    transform: scale(1.02) !important;
-    box-shadow: unset;
-    border-radius: unset;
+    a {
+      top: 50%;
+      left: 42%;
+    }
   }
 }
 
-.home-swiper-image-2 {
-  grid-area: ms;
-}
-
-.home-swiper-image-3 {
-  grid-area: ls;
-}
-
-.home-swiper-image-4 {
-  grid-area: kl;
-}
-
-.home-swiper-image-5 {
-  grid-area: op;
-
+.home-swiper-image-5-container {
   &:hover {
-    transform: scale(1.02) !important;
-    box-shadow: unset;
-    border-radius: unset;
+    a {
+      top: 50%;
+      left: 42%;
+    }
   }
-}
-
-.home-swiper-image-7 {
-  grid-area: qw;
-}
-
-.home-swiper-image-8 {
-  grid-area: ew;
-}
-
-.home-swiper-image-9 {
-  grid-area: rt;
 }
