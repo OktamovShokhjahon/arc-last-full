@@ -2,7 +2,11 @@
 .faq-container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
+  /* padding: 20px; */
+
+  .title {
+    margin-bottom: 20px;
+  }
 }
 
 .faq-item {

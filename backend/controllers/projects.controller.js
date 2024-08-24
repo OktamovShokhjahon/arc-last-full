@@ -88,10 +88,15 @@ const createProject = async (req, res) => {
 
     const allDirectories = [];
 
-    media.forEach((image) => {
-      const imageName = save(image);
+    if (media.length === undefined) {
+      const imageName = save(media);
       allDirectories.push(imageName);
-    });
+    } else {
+      media.forEach((image) => {
+        const imageName = save(image);
+        allDirectories.push(imageName);
+      });
+    }
 
     let imageDir;
     allDirectories.forEach((dir) => {
