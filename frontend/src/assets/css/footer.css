@@ -1,0 +1,157 @@
+/* .footer {
+  background: #1e1e1e;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer_items {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.footer_item_input {
+  display: flex;
+
+  input {
+    background: #fff;
+    color: #1e1e1e;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+  }
+
+  button {
+    background: #333;
+    color: #fff;
+    transition: 0.3s all ease 0s;
+    border: none;
+    padding: 10px 20px;
+    font-family: "Montserrat";
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.footer_logo {
+  img {
+    width: 200px;
+  }
+
+  .desc {
+    color: #fff;
+    width: 60%;
+    margin-top: 15px;
+    font-family: "Montserrat";
+  }
+}
+
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+} */
+
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #1a1a1a;
+  padding: 30px 0px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    max-width: 1200px;
+    gap: 100px;
+  }
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section .logo h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+}
+
+.footer-section input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all ease 0s;
+  margin-bottom: 20px;
+
+  &:hover {
+    background: #1a1a1a;
+    color: #fff;
+  }
+}
+
+.footer-section {
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #1a1a1a;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  a {
+    color: #ccc;
+    transition: 0.3s all ease 0s;
+  }
+}
+
+.footer-section .social-icons i {
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer-section .social-icons i:hover {
+  color: #cccccc;
+}

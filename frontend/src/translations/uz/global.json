@@ -1,0 +1,83 @@
+{
+    "navbar": {
+        "navbar1": "Bosh sahifa",
+        "navbar2": "Loyihalar",
+        "navbar3": "Blog",
+        "navbar4": "Bog'lanish"
+    },
+    "main": {
+        "title": "ARC Design Group",
+        "desc": "Xush kelibsiz! ARC Design Group, innovatsion va zamonaviy yechimlarni taqdim etuvchi yetakchi dizayn kompaniyasidir. Biz mijozlarimizga sifatli va ishonchli xizmatlarni taklif etamiz, ularning orzularini haqiqatga aylantirishga yordam beramiz.",
+        "button": "LOYIHALAR"
+    },
+    "status": {
+        "title1": "Tajriba (YIL)",
+        "title2": "Loyihalar Soni",
+        "title3": "Jamoa A'zolari Soni",
+        "title4": "Doimiy Mijozlar Soni"
+    },
+    "projects": {
+        "title": "Bizning loyihalar",
+        "desc": "Siz bu yerda bizning tajribali jamoamiz tomonidan yasalgan 3d dizaynlardan va render qilingan rasmlardan ko'rishingiz mumkin."
+    },
+    "clientsHeader": {
+        "title": "Izoxlar",
+        "desc": "Mijozlarimiz Qoldirgan Izoxlar!",
+        "status1": "Hursand mijozlar",
+        "status2": "Firma Raytingi"
+    },
+    "clients": {
+        "client1": {
+            "desc": "Shaxsiy yondashuv: 'ARC Design Group har bir mijoziga individual yondashadi. Bizning didimiz va ehtiyojlarimizni to'liq tushunishdi va natijada biz xohlaganimizdan ham ko'proq qoniqish oldik. Ular bilan ishlash - bu haqiqiy zavq!'",
+            "author": "Mubina"
+        },
+        "client2": {
+            "desc": "Professionalizm va ijodkorlik: 'ARC Design Group bilan ishlashbiz uchun haqiqiy zavq bo'ldi.  Ularning ijodiy yechimlari va zamonaviy dizaynlari bizning kutganimizdan ham yuqori chiqdi. Jamoa har bir qadamda professional va samimiy yondashdi.'",
+            "author": "Asadbek"
+        },
+        "client3": {
+            "desc": "Tezkor va sifatli xizmat: 'ARC Design Group bilan loyihani amalga oshirish juda oson va yoqimli bo'ldi. Ular vaqtida hamma ishni bajarishdi va natija a'lo darajada bo'ldi. Bizning uyimiz endi haqiqiy san'at asari kabi ko'rinadi!'",
+            "author": "Ahror"
+        },
+        "client4": {
+            "desc": "Ajoyib ko'rinish va funksionallik: 'ARC Design Group jamoasi bizning orzularimizni haqiqatga aylantirdi! Ular bizning uyimizni nafaqat zamonaviy va estetik jihatdan jozibali qildilar, balki amaliy jihatdan ham qulaylikni oshirishdi. Har bir detalga katta e'tibor berilgan, biz juda mamnunmiz!'",
+            "author": "Muhammad"
+        }
+    },
+    "footerHeader": {
+        "title": "Vebsayt Menusi",
+        "header1": "Loyihalar",
+        "header2": "Blog",
+        "header3": "Bog'lanish"
+    },
+    "footerNews": {
+        "title": "Ohirgi Yangiliklar",
+        "desc": "ARC Design Group, innovatsion va zamonaviy yechimlarni taqdim etuvchi yetakchi dizayn kompaniyasidir. Biz mijozlarimizga sifatli va ishonchli xizmatlarni taklif etamiz, ularning orzularini haqiqatga aylantirishga yordam beramiz."
+    },
+    "footerSocials": {
+        "title": "Bizga Qo'shiling"
+    },
+    "projectsPage": {
+        "title": "Loyihalar",
+        "link": "/loyihalar"
+    },
+    "blogsPage": {
+        "title": "Blog",
+        "link": "/blog"
+    },
+    "contactPage": {
+        "name": "Ism",
+        "phone": "Telefon",
+        "message": "Xabar",
+        "button": "Jo'natish"
+    },
+    "servicesPage": {
+        "title": "Bizning Xizmatlarimiz",
+        "desc2": "Biz birinchi navbatda mijoz bilan ularga kerak bo'ladigan dizayn haqida bataful gaplashib olamiz.",
+        "desc1": "Biz siz bilan batafsil muloqot qilib bo'lgach sizdan olgan barcha hohish va istaklarni birlashtirgan holda reja tuzamiz.",
+        "desc3": "Tuzilgan rejalar orqali esa jamoamiz bilan birga betakror dizaynni yaratishga kirishamiz.",
+        "title2": "Rejalashtirish",
+        "title1": "Bepul Konsultatsiya",
+        "title3": "Dizaynni Yaratish"
+    }
+}

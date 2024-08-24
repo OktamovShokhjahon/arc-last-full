@@ -1,0 +1,68 @@
+.projects {
+  margin-top: 100px;
+}
+
+.project_cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project_card {
+  background: #e1e1e1;
+  border-radius: 10px;
+}
+
+.project_card_image {
+  img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+
+.project_card_settings {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+
+  i {
+    font-size: 30px;
+  }
+}
+
+.project_card_delete {
+  i {
+    background: red;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.project_card_edit {
+  i {
+    background: blue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.create_project {
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 20px;
+
+  .btn {
+    margin-top: 20px;
+  }
+}

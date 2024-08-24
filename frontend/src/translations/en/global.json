@@ -1,0 +1,83 @@
+{
+    "navbar": {
+        "navbar1": "Home",
+        "navbar2": "Projects",
+        "navbar3": "Blog",
+        "navbar4": "Contact"
+    },
+    "main": {
+        "title": "ARC Design Group",
+        "desc": "Welcome! ARC Design Group is a leading design company that offers innovative and modern solutions. We provide our clients with quality and reliable services, helping them turn their dreams into reality.",
+        "button": "PROJECTS"
+    },
+    "status": {
+        "title1": "Experience (YEARS)",
+        "title2": "Number of Projects",
+        "title3": "Number of Team Members",
+        "title4": "Number of Permanent Clients"
+    },
+    "projects": {
+        "title": "Our Projects",
+        "desc": "Here you can see 3D designs and rendered images created by our experienced team."
+    },
+    "clientsHeader": {
+        "title": "Testimonials",
+        "desc": "Testimonials from Our Clients!",
+        "status1": "Happy Clients",
+        "status2": "Company Rating"
+    },
+    "clients": {
+        "client1": {
+            "desc": "Personal Approach: 'ARC Design Group approaches each client individually. They fully understood our tastes and needs, and as a result, we received more satisfaction than we expected. Working with them is a real pleasure!'",
+            "author": "Mubina"
+        },
+        "client2": {
+            "desc": "Professionalism and Creativity: 'Working with ARC Design Group was a real pleasure for us. Their creative solutions and modern designs exceeded our expectations. The team approached every step professionally and sincerely.'",
+            "author": "Asadbek"
+        },
+        "client3": {
+            "desc": "Fast and Quality Service: 'It was very easy and pleasant to implement the project with ARC Design Group. They completed everything on time, and the result was excellent. Our house now looks like a real work of art!'",
+            "author": "Ahror"
+        },
+        "client4": {
+            "desc": "Great Look and Functionality: 'The ARC Design Group team turned our dreams into reality! They made our home not only modern and aesthetically appealing but also more functional. Every detail was given great attention, and we are very satisfied!'",
+            "author": "Muhammad"
+        }
+    },
+    "footerHeader": {
+        "title": "Website Menu",
+        "header1": "Projects",
+        "header2": "Blog",
+        "header3": "Contact"
+    },
+    "footerNews": {
+        "title": "Latest News",
+        "desc": "ARC Design Group is a leading design company that offers innovative and modern solutions. We provide our clients with quality and reliable services, helping them turn their dreams into reality."
+    },
+    "footerSocials": {
+        "title": "Join Us"
+    },
+    "projectsPage": {
+        "title": "Projects",
+        "link": "/projects"
+    },
+    "blogsPage": {
+        "title": "Blog",
+        "link": "/blog"
+    },
+    "contactPage": {
+        "name": "Name",
+        "phone": "Phone",
+        "message": "Message",
+        "button": "Send"
+    },
+    "servicesPage": {
+      "title": "Our Services",
+      "desc2": "First, we thoroughly discuss with the client about the design they need.",
+      "desc1": "After detailed communication with you, we create a plan that combines all your desires and preferences.",
+      "desc3": "Based on the created plans, our team starts working on creating a unique design.",
+      "title2": "Planning",
+      "title1": "Free Consultation",
+      "title3": "Design Creation"
+    }
+}
