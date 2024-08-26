@@ -6,6 +6,8 @@ const TelegramBot = require("node-telegram-bot-api");
 const Bot = new TelegramBot(process.env.TOKEN, { polling: true });
 
 const save = (file) => {
+  console.log(file);
+
   try {
     const fileName =
       uuidv4() + `${file.mimetype.includes("video") ? ".mp4" : ".jpg"}`;

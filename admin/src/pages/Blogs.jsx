@@ -143,7 +143,7 @@ function Blogs() {
                       />
                     </div>
                     <div className="blog_card_info">
-                      <p className="desc">{project.desc}</p>
+                      <p className="desc">{project.desc_uz}</p>
                       <p className="date">{formattedDate}</p>
                     </div>
                     <div className="blog_card_settings">
@@ -155,7 +155,7 @@ function Blogs() {
                       </div>
                       <div className="project_card_edit">
                         <i
-                          class="fa-solid fa-pen"
+                          className="fa-solid fa-pen"
                           onClick={() => {
                             setShowModal(true);
                             setModalId(project._id);

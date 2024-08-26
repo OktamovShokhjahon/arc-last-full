@@ -53,13 +53,19 @@ const getOne = async (req, res) => {
 
 const updateProject = async (req, res) => {
   try {
-    const reqBody = req.body;
+    const { desc_uz, desc_en, desc_ru, image } = req.body;
     const { id } = req.params;
-    const { image } = req.files;
+    const reqFiles = req.files;
 
-    const imagePath = save(image);
+    let newImage = null;
+
+    if (reqFiles !== null) {
+      newImage = reqFiles.newImage;
+    }
 
     const existProject = await Blog.findById(id);
+
+    console.log(existProject);
 
     if (!existProject) {
       const data = {
@@ -70,16 +76,27 @@ const updateProject = async (req, res) => {
       return;
     }
 
+    let imagePath = image;
+
+    console.log(newImage);
+    if (newImage) {
+      imagePath = save(newImage);
+    }
+
     const updProject = await Blog.findByIdAndUpdate(
       id,
       {
-        desc: reqBody.desc,
+        desc_uz,
+        desc_en,
+        desc_ru,
         image: imagePath,
       },
       {
         new: true,
       }
     );
+
+    console.log(updProject);
 
     const data = {
       ok: true,

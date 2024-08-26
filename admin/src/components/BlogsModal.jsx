@@ -1,15 +1,16 @@
 // packages
-import { useEffect, useState } from "react";
-import useFetch from "../hooks/useFetch";
+import { useState } from "react";
 import axios from "axios";
 
 // css
 import "../css/Modal.css";
 
 function BlogsModal({ setShowModal, id, getAllData }) {
-  const [desc, setDesc] = useState(null);
+  const [descUz, setDescUz] = useState(null);
+  const [descEn, setDescEn] = useState(null);
+  const [descRu, setDescRu] = useState(null);
   const [blog, setBlog] = useState(null);
-  const [selectedImages, setSelectedImages] = useState([]);
+  const [selectedFile, setSelectedFile] = useState(null);
 
   // const {
   //   data: blog,
@@ -30,29 +31,45 @@ function BlogsModal({ setShowModal, id, getAllData }) {
       });
   };
 
-  if (!blog) {
+  if (blog === null) {
     getData();
   }
 
-  if (!desc) {
+  if (!descUz) {
     if (blog) {
-      setDesc(blog.desc);
+      setDescUz(blog.desc_uz);
     }
   }
 
-  const handleImageChange = (event) => {
-    setSelectedImages(event.target.files);
+  if (!descEn) {
+    if (blog) {
+      setDescEn(blog.desc_en);
+    }
+  }
+
+  if (!descRu) {
+    if (blog) {
+      setDescRu(blog.desc_ru);
+    }
+  }
+
+  const handleFileChange = (event) => {
+    setSelectedFile(event.target.files[0]);
   };
 
   const handleUpload = async () => {
     const formData = new FormData();
-    console.log(desc);
-    if (selectedImages) {
-      for (let i = 0; i < selectedImages.length; i++) {
-        formData.append("image", selectedImages[i]);
-      }
+
+    if (selectedFile) {
+      formData.append("newImage", selectedFile);
+    } else {
+      console.log(blog);
+      formData.append("image", blog.image);
     }
-    formData.append("desc", desc);
+
+    formData.append("desc_uz", descUz);
+    formData.append("desc_en", descEn);
+    formData.append("desc_ru", descRu);
 
     try {
       const response = await axios.post(
@@ -64,6 +81,7 @@ function BlogsModal({ setShowModal, id, getAllData }) {
           },
         }
       );
+      console.log(response);
       setShowModal(false);
       getAllData();
     } catch (error) {
@@ -78,24 +96,35 @@ function BlogsModal({ setShowModal, id, getAllData }) {
           <div className="modal_header">
             <i
               onClick={() => setShowModal(false)}
-              class="fa-solid fa-xmark"
+              className="fa-solid fa-xmark"
             ></i>
           </div>
           <div className="create_blog modal_body" style={{ border: "none" }}>
             <div className="create_blog_label">
-              <input
-                type="file"
-                accept="image/*"
-                multiple
-                onChange={handleImageChange}
-              />
+              <input type="file" accept="image/*" onChange={handleFileChange} />
             </div>
             <div className="modal_body_label">
-              <span>Matnni o'zgartirish</span>
+              <span>Ozbekcha Matnni kiriting</span>
               <textarea
-                placeholder="Matnni kiriting"
-                onChange={(e) => setDesc(e.target.value)}
-                value={desc}
+                placeholder="O'zbekcha Matnni kiriting"
+                onChange={(e) => setDescUz(e.target.value)}
+                value={descUz}
+              ></textarea>
+            </div>
+            <div className="modal_body_label">
+              <span>Ruscha Matnni kiriting</span>
+              <textarea
+                placeholder="Ruscha Matnni kiriting"
+                onChange={(e) => setDescRu(e.target.value)}
+                value={descRu}
+              ></textarea>
+            </div>
+            <div className="modal_body_label">
+              <span>Ingilizcha Matnni kiriting</span>
+              <textarea
+                placeholder="O'zbekcha Matnni kiriting"
+                onChange={(e) => setDescEn(e.target.value)}
+                value={descEn}
               ></textarea>
             </div>
             <div className="modal_body_btn">
